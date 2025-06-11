@@ -39,15 +39,18 @@ nav a:hover {
 }
 
 section {
-  padding: 2rem;
+  padding: 2rem 3rem;   /* 左右都加內距 */
   max-width: 800px;
-  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;  /* 明確文字靠左 */
 }
 
 section h2 {
   color: #004d99;
   margin-bottom: 0.5rem;
 }
+
 ul {
   list-style-type: disc;
   margin-left: 2rem;
@@ -61,12 +64,11 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+
 .profile-section {
   font-family: "Microsoft JhengHei", sans-serif;
   line-height: 1.8;
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 2rem;
+  margin: 30px 0;  /* 上下間距，左右不要再加margin，避免影響排版 */
 }
 
 .profile-section h2 {
@@ -93,5 +95,3 @@ footer {
 .profile-section .section {
   margin-bottom: 30px;
 }
-
-
