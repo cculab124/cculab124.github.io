@@ -81,4 +81,14 @@ section h2 {
 /* 其他同上 */
 ul {
   list-style-type: disc;
-  margin-lef
+  margin-left: 2rem;
+}
+
+footer {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #666;
+}
