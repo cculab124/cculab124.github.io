@@ -122,32 +122,39 @@ img {
   max-width: 100%;
   height: auto;
 }
-.photo-scroll-container {
-  max-width: 1600px;
+.photo-scroll-box {
+  max-width: 800px;
   margin: 1.5rem auto 0 auto;
   overflow-x: auto;
   padding-bottom: 1rem;
+  position: relative;
 }
 
 .photo-track {
   display: inline-flex;
   gap: 1rem;
-  position: relative;  /* 為絕對定位的 hover 效果提供參考 */
+  position: relative;
+}
+
+.photo-container {
+  position: relative;
 }
 
 .photo-track img {
   height: 160px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
+  transition: transform 0.3s ease;
+  display: block;
   z-index: 1;
 }
 
-/* 滑鼠懸停放大圖 */
+/* 放大顯示浮在外面 */
 .photo-track img:hover {
+  position: absolute;
+  top: -100px; /* 根據實際位置調整，讓它往上浮出 */
+  left: 0;
   transform: scale(2.0);
-  z-index: 999;
+  z-index: 1000;
   box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
-
