@@ -122,3 +122,25 @@ img {
   max-width: 100%;
   height: auto;
 }
+.photo-scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 1rem 0;
+  margin-top: 1.5rem;
+}
+
+.photo-track {
+  display: inline-flex;
+  gap: 1rem;
+}
+
+.photo-track img {
+  height: 160px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.photo-track img:hover {
+  transform: scale(1.05);
+}
