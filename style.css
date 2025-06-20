@@ -124,7 +124,7 @@ img {
 }
 .photo-scroll-box {
   max-width: 800px;
-  margin: 1.5rem auto 0 auto;  /* 與 section 對齊並置中 */
+  margin: 1.5rem auto 0 auto;
   overflow-x: auto;
   padding-bottom: 1rem;
 }
@@ -138,9 +138,11 @@ img {
   height: 160px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
 }
 
 .photo-track img:hover {
-  transform: scale(1.05);
+  transform: scale(2.0);
+  z-index: 10;
 }
